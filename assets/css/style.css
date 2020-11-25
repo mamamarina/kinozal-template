@@ -1,0 +1,118 @@
+.header-logo__title, .header-logo__description {
+  text-shadow: 0 0 30px #000000, 0 0 15px #000000, 0 0 1px #000000;
+}
+
+.navbar-inverse {
+  background-color: #191919;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #517ba2;
+}
+
+.navbar-inverse .navbar-nav li > a {
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.navbar-inverse .navbar-nav li > a:hover, .navbar-inverse .navbar-nav li > a:focus {
+  background-color: #165690;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
+}
+
+.header {
+  margin-bottom: 80.0px;
+}
+
+.header-logo {
+  background-color: #232323;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.header-logo__title {
+  display: block;
+  color: #df8a13;
+  font-family: "PT Serif", serif;
+}
+
+.header-logo__description {
+  display: block;
+  color: #ffffff;
+  font-size: 1.15rem;
+  letter-spacing: 0.2em;
+}
+
+@media (min-width: 576px) {
+  .header-logo__title {
+    font-size: 3.5rem;
+    letter-spacing: 0.33em;
+    margin-right: -15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav li > a {
+    border-radius: 4px;
+  }
+  .navbar-left li {
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-right li {
+    margin: 5px 0 5px 5px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .navbar-inverse .navbar-nav li > a {
+    text-align: center;
+  }
+  .navbar-header {
+    text-align: center;
+  }
+  .navbar-toggle {
+    float: none;
+    margin: 0;
+  }
+  .navbar-left {
+    margin-bottom: 0;
+  }
+  .navbar-right {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .header-logo__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    margin-right: -5px;
+  }
+}
