@@ -1,0 +1,112 @@
+.main {
+    @extend %margin-bottom-lg;
+}
+
+.site-search {
+    margin-bottom: $gap*2;
+
+    @include sm {
+        margin-bottom: $gap*3;
+    }
+}
+
+.user-login {
+    margin-bottom: $gap*2;
+    
+    @include sm {
+        margin-bottom: $gap*4;
+    }
+}
+
+.new-films,
+.top-week {
+    @extend %pseudoclass-after-parent;
+
+    &-row {
+        margin-left: -($gap/2);
+        margin-right: -($gap/2) ;
+    }
+
+    &-item {
+        padding-left: $gap/2;
+        padding-right: $gap/2;
+        margin-bottom: $gap;
+
+        &__image {
+            @extend %image;
+        }
+
+        &__title {
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        &__thumbnail {
+            transition: background-color 0.5s;
+            &:hover,
+            &:focus {
+            background-color: $color-accent !important;
+            border-color: $color-accent;
+
+            .new-films-item__title {
+                color: $color-light !important;
+            }
+        }
+      }
+    }
+}
+
+.movie-news {
+    @extend %pseudoclass-after;
+
+    &-row {
+        margin-left: -($gap);
+        margin-right: -($gap);
+    }
+
+    &-item{
+        &:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+        &:hover {
+            .movie-news-item__thumbnail {
+                border-color: lighten($color-accent, 20%);
+                background-color: lighten($color-accent, 20%);
+            }
+
+            .movie-news-item__button {
+                background-color: $color-accent;
+            }
+
+            h3 {
+                color: $color-accent;
+            }
+        }
+    
+    &__thumbnail {
+        clear: both;
+        transition: background-color 0.25s;
+        float: left;
+        @include sm {
+            float: none;
+        } 
+    }
+
+    &__image {  
+        @extend %image;
+    }
+
+    &__button {
+        float: right;
+        margin-bottom: $gap*2;
+        transition: background-color 0.25s;
+    }
+  } 
+}

@@ -10,5 +10,66 @@ html {
 body {
     font-size: 1rem;
     font-family: $font-main;
+    overflow-x: hidden;
 }
 
+a {
+    color: $color-primary;
+    text-decoration: none;
+    display: block;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $color-accent;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: -7.5px;
+    @extend %heading;
+
+    @include md-sm {
+        margin-top: 40px;
+    }
+
+    &:after {
+        @extend %pseudoclass-before-after;
+        width: 100%;
+        margin: 40px 0 0 $gap;
+    }
+}
+
+h2 {
+    @extend %heading;
+    margin: $gap*4 0 $gap*3 $gap*3;
+    font-size: 2.5rem;
+
+    &:before {
+        @extend %pseudoclass-before-after;
+        left: 0;
+        margin: 0.25em 0 0 0;
+        width: $gap*2;
+    }
+
+    &:after {
+        @extend %pseudoclass-before-after;
+        width: 100%;
+        margin: 0.85em 0 0 $gap;
+    }
+}
+
+h3 {
+    margin-top: 0;
+}
+
+p {
+    display: block;
+    text-align: justify;
+    margin: 0 0 10px;
+}
+
+strong {
+    font-weight: 700;
+}

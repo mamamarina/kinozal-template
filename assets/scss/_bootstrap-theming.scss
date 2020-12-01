@@ -2,29 +2,32 @@
     background-color: darken($color-dark, 4%);
 
    .navbar-nav {
+
     > .active > a {
         background-color: $color-primary-dark;
 
     &:hover,
     &:focus {
         background-color: $color-primary-light;
+        }
     }
-    }
+    
     li > a {
         transition: background-color 0.5s;
+
         @include sm-min {
-        border-radius: 4px;
+            border-radius: 4px;
         }
+
         @include sm {
             text-align: center;
         }
         
-
     &:hover,
     &:focus {
         background-color: $color-primary;
-    }
-    }
+        }
+      }
    }
 }
 
@@ -35,14 +38,18 @@
 .navbar-header {
     @include sm {
         text-align: center;
+    }
 }
-}
+
 .navbar-toggle {
     @include sm {
         float: none;
-        margin: 0;
+        margin-right: 0;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }
+
 .navbar-left {
     @include sm-min {
         li {
@@ -64,5 +71,46 @@
     @include sm {
         margin-top: 0;
     }
-    
 }
+
+.panel {
+    margin-bottom: $gap*2;
+
+    &-info {
+        border: none;
+        background-color: darken($color-light, 8%);
+
+        > .panel-heading {
+            color: $color-light;
+            background-color: $color-accent;
+            border: none;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &-body {
+        border: 1px solid $color-gray;
+        border-radius: 0 0 4px 4px;
+    }
+}
+.input {
+    &-lg,
+    &-group-lg > .form-control {
+        font-size: 0.875rem;
+    }
+}
+
+.thumbnail {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+ 
+
+

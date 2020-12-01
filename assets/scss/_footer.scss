@@ -1,0 +1,48 @@
+.footer {
+    background-color: $color-dark;
+    padding-top: $gap*3;
+    padding-bottom: 20px;
+    color: $color-gray;
+
+    &-top{
+
+        &-column {
+
+            &__title {
+                color: $color-light;
+            }
+
+            &__list {
+                list-style: none;
+                padding: 0;
+            }
+
+            &__link {
+                color: lighten($color-dark, 33%);
+                transition: color 0.25s;
+                &:hover,
+                &:focus {
+                    color: $color-light;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        margin-top: 20px;
+
+        &-column {
+
+            &__link {
+                text-align: center;
+                color: $color-light;
+                
+                &:hover,
+                &:focus {
+                    color: $color-light;
+                }
+            }
+            
+        }
+    }
+}

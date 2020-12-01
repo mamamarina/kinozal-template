@@ -1,0 +1,48 @@
+.movie-info {
+  @extend %pseudoclass-after-parent;
+
+  &__embed {
+    border-right: 1px solid $color-gray;
+  }
+
+  &__well {
+    margin-bottom: $gap*2;
+    border-radius: 0 0 4px 4px;
+
+    &-item {
+        font-size: 1.1875rem;
+        color: lighten($color-dark, 6.25%);
+  
+        &:not(:last-of-type) {   
+          margin-right: $gap;
+        }
+      }
+    
+    &-bage {   
+        font-size: 0.96rem;            
+      }
+  }
+}
+
+.movie-description {
+  @extend %pseudoclass-after-parent;
+}
+
+.movie-comments {
+  @extend %pseudoclass-after-parent;
+
+  &__panel{
+
+    &-glyphicon {
+      margin-right: 10px;
+    }
+  }
+}
+
+.movie-comment-new {
+  @extend %pseudoclass-after-parent;
+  
+  &__btn {
+    float: right;
+  }
+}

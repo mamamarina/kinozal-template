@@ -1,3 +1,25 @@
 %text-shadow {
     text-shadow: 0 0 30px $color-black, 0 0 15px $color-black, 0 0 1px $color-black;
 }
+
+%margin-bottom-lg {
+    margin-bottom: $gap*5.333333333; 
+}
+
+
+%heading {
+    font-family: $font-header;
+    margin-bottom: $gap*3;
+}
+
+%image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+
+%pseudoclass-after {
+    position: relative;
+    overflow: hidden;
+}

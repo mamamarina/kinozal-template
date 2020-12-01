@@ -1,5 +1,5 @@
 .header {
-   margin-bottom: $gap*5.333333333; 
+   @extend %margin-bottom-lg;
 }
 
 .header-logo {
