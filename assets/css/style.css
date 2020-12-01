@@ -19,9 +19,18 @@ h1, h2 {
   width: 100%;
 }
 
-.movie-news, .movie-info, .movie-description, .movie-comments, .movie-comment-new {
+.new-films,
+.top-week, .movie-news, .movie-info, .movie-description, .movie-comments, .movie-comment-new {
   position: relative;
   overflow: hidden;
+}
+
+h1:after, h2:before, h2:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #f0ad4f;
+  opacity: 0.7;
 }
 
 .navbar-inverse {
@@ -114,12 +123,7 @@ h1 {
 }
 
 h1:after {
-  position: absolute;
-  content: "";
-  width: 57.7%;
-  height: 3px;
-  background-color: #f0ad4f;
-  opacity: 0.7;
+  width: 100%;
   margin: 40px 0 0 15px;
 }
 
@@ -129,24 +133,14 @@ h2 {
 }
 
 h2:before {
-  position: absolute;
   left: 0;
   margin: 0.25em 0 0 0;
-  content: "";
   width: 30px;
-  height: 3px;
-  background-color: #f0ad4f;
-  opacity: 0.7;
 }
 
 h2:after {
   width: 100%;
   margin: 0.85em 0 0 15px;
-  position: absolute;
-  content: "";
-  height: 3px;
-  background-color: #f0ad4f;
-  opacity: 0.7;
 }
 
 h3 {
@@ -157,10 +151,6 @@ p {
   display: block;
   text-align: justify;
   margin: 0 0 10px;
-}
-
-strong {
-  font-weight: 700;
 }
 
 .header-logo {
@@ -192,12 +182,6 @@ strong {
 
 .user-login {
   margin-bottom: 30px;
-}
-
-.new-films,
-.top-week {
-  position: relative;
-  overflow: hidden;
 }
 
 .new-films-row,
@@ -286,6 +270,7 @@ strong {
 
 .movie-info__embed {
   border-right: 1px solid #dddddd;
+  border-radius: 3px 3px 0 0;
 }
 
 .movie-info__well {
@@ -299,11 +284,15 @@ strong {
 }
 
 .movie-info__well-item:not(:last-of-type) {
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .movie-info__well-bage {
   font-size: 0.96rem;
+}
+
+.movie-comments__panel-title {
+  font-size: 1.25rem;
 }
 
 .movie-comments__panel-glyphicon {
@@ -495,7 +484,6 @@ strong {
   .header-logo__title {
     font-size: 3.5rem;
     letter-spacing: 0.33em;
-    margin-right: -15px;
   }
 }
 
@@ -508,12 +496,6 @@ strong {
   }
   .navbar-right li {
     margin: 5px 0 5px 5px;
-  }
-}
-
-@media (max-width: 991.8px) {
-  h1:after {
-    width: 50%;
   }
 }
 

@@ -19,7 +19,15 @@
     width: 100%;
 }
 
-%pseudoclass-after {
+%pseudoclass-after-parent {
     position: relative;
     overflow: hidden;
+}
+
+%pseudoclass-before-after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: lighten($color-accent, 15%);
+    opacity: 0.7;
 }

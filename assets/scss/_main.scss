@@ -63,7 +63,7 @@
 }
 
 .movie-news {
-    @extend %pseudoclass-after;
+    @extend %pseudoclass-after-parent;
 
     &-row {
         margin-left: -($gap);

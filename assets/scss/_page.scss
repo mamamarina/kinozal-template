@@ -3,6 +3,7 @@
 
   &__embed {
     border-right: 1px solid $color-gray;
+    border-radius: 3px 3px 0 0;
   }
 
   &__well {
@@ -14,7 +15,7 @@
         color: lighten($color-dark, 6.25%);
   
         &:not(:last-of-type) {   
-          margin-right: $gap;
+          margin-right: 25px;
         }
       }
     
@@ -32,6 +33,10 @@
   @extend %pseudoclass-after-parent;
 
   &__panel{
+
+    &-title {
+      font-size: 1.25rem;
+    }
 
     &-glyphicon {
       margin-right: 10px;
