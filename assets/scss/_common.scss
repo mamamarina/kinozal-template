@@ -26,26 +26,36 @@ a {
 }
 
 h1 {
-    font-size: 3rem;
-    margin-top: -7.5px;
-    @extend %heading;
+    @extend %heading;  
+        font-size: 3rem;
+        margin-top: -7.5px;
 
-    @include md-sm {
-        margin-top: 40px;
+    @include xs {
+        font-size: 2rem;
+        margin: 0 0 $gap*2;
     }
 
     &:after {
         @extend %pseudoclass-before-after;
         width: 100%;
         margin: 40px 0 0 $gap;
+        @include xs {
+            margin-top: $gap*2;
+        }
     }
 }
 
 h2 {
     @extend %heading;
-    margin: $gap*4 0 $gap*3 $gap*3;
-    font-size: 2.5rem;
-
+    @include xs-min {
+        margin: $gap*4 0 $gap*3 $gap*3;
+        font-size: 2.5rem;
+    }
+    @include xs {
+        margin: $gap*3 0 $gap*2 $gap*3;
+        font-size: 2rem;
+    }
+    
     &:before {
         @extend %pseudoclass-before-after;
         left: 0;

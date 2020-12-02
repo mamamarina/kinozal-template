@@ -4,13 +4,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>КиноЗал</title>
   <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
   <!--[if lt IE 9]>
@@ -22,41 +21,42 @@
 <body>
   <header>
     <div class="header container-fluid">
-          <div class="header-logo row">
-                <div class="container">
-                      <strong class="header-logo__title">КиноЗал</strong>
-                      <span class="header-logo__description">Найди свое кино</span>
-                </div>
+      <div class="header-logo row">
+        <div class="container">
+          <strong class="header-logo__title">КиноЗал</strong>
+          <span class="header-logo__description">Найди свое кино</span>
+        </div>
+      </div>
+      <div class="header-menu row">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="page.html">Фильмы</a></li>
+                <li><a href="#">Сериалы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Рейтинг</a></li>
+                <li><a href="#">Раздачи</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="header-menu row">
-            <nav class="navbar navbar-inverse navbar-static-top">
-                  <div class="container">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                    </div>
-                
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="index.html">Главная</a></li>
-                        <li><a href="page.html">Фильмы</a></li>
-                        <li><a href="#">Сериалы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                      </ul>
-                      
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Новинки</a></li>
-                        <li><a href="#">Рейтинг</a></li>
-                        <li><a href="#">Раздачи</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -79,14 +79,15 @@
             </form>
           </div>
         </section>
-        <section  class="user-login panel panel-info hidden-lg hidden-md">
+        <section class="user-login panel panel-info hidden-lg hidden-md">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
             <div>
 
               <ul class="user-login__tabs nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#user-login-main" class="user-login__link" aria-controls="user-login-main" role="tab" data-toggle="tab">
+                  <a href="#user-login-main" class="user-login__link" aria-controls="user-login-main" role="tab"
+                    data-toggle="tab">
                     <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
                   </a>
                 </li>
@@ -96,7 +97,7 @@
                   </a>
                 </li>
               </ul>
-            
+
               <div class="user-login__content tab-content">
                 <div role="tabpanel" class="tab-pane active fade in" id="user-login-main">
                   <form action="login">
@@ -106,7 +107,7 @@
                     <div class="form-group">
                       <input name="pass" class="form-control input-lg" type="password" placeholder="Пароль">
                     </div>
-                      <button class="btn btn-default btn-lg btn-block" type="submit">Вход</button>
+                    <button class="btn btn-default btn-lg btn-block" type="submit">Вход</button>
                   </form>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
@@ -120,11 +121,11 @@
                     <div class="form-group">
                       <input name="email" class="form-control input-lg" type="email" placeholder="Email">
                     </div>
-                      <button class="btn btn-default btn-lg btn-block" type="submit">Регистрация</button>
+                    <button class="btn btn-default btn-lg btn-block" type="submit">Регистрация</button>
                   </form>
                 </div>
               </div>
-            
+
             </div>
           </div>
         </section>
@@ -237,7 +238,7 @@
                 <a href="#">
                   <img class="new-films-item__image" src="assets/img/films/1453229.jpg" alt="">
                   <div class="new-films-item__caption caption">
-                    <h3 class="new-films-item__title">Люди икс</h3>
+                    <h3 class="new-films-item__title">Люди Икс</h3>
                   </div>
                 </a>
               </div>
@@ -247,7 +248,7 @@
                 <a href="page.html">
                   <img class="new-films-item__image" src="assets/img/films/1455536.jpg" alt="">
                   <div class="new-films-item__caption caption">
-                    <h3 class="new-films-item__title">Иллюзия обмана</h3>
+                    <h3 class="new-films-item__title">Иллюзия обмана 2</h3>
                   </div>
                 </a>
               </div>
@@ -273,7 +274,7 @@
                 <a href="#">
                   <img class="top-week-item__image" src="assets/img/films/1453229.jpg" alt="">
                   <div class="top-week-item__caption caption">
-                    <h3 class="top-week-item__title">Люди икс</h3>
+                    <h3 class="top-week-item__title">Люди Икс</h3>
                   </div>
                 </a>
               </div>
@@ -385,7 +386,9 @@
           <h2 class="movie-news__title">Новости кино</h2>
           <article class="movie-news-item">
             <div class="movie-news-item__caption caption">
-              <a href="#"><h3>Кейт Бекинсейл представила фильм "Другой мир: Войны крови"</h3></a>
+              <a href="#">
+                <h3>Кейт Бекинсейл представила фильм "Другой мир: Войны крови"</h3>
+              </a>
             </div>
             <div class="movie-news-row row">
               <div class="col col-sm-4">
@@ -394,55 +397,62 @@
                 </div>
               </div>
               <div class="col col-sm-8">
-                <p class="movie-news-item__paragraph">Кейт Бекинсейл представила в Мексике свой новый фильм "Другой мир: Войны
+                <p class="movie-news-item__paragraph">Кейт Бекинсейл представила в Мексике свой новый фильм "Другой мир:
+                  Войны
                   крови". На красной дорожке актриса позировала фотографам в роскошном красном платье. В фильме речь
                   пойдет о Селене - Воительница-вампир Селена вступает в свой последний и решающий бой между оборотнями
                   и кланом вампиров, который предал ее. В украинских кинотеатрах картину можно увидеть с 1 декабря...
                 </p>
-                <a href="#" class="movie-news-item__button btn btn-warning" role="button">Подробней</a> 
+                <a href="#" class="movie-news-item__button btn btn-warning" role="button">Подробней</a>
               </div>
             </div>
           </article>
 
           <article class="movie-news-item">
             <div class="movie-news-item__caption caption">
-              <a href="#"><h3>Критики Нью-Йорка выбрали лучший фильм 2016 года</h3></a>
+              <a href="#">
+                <h3>Критики Нью-Йорка выбрали лучший фильм 2016 года</h3>
+              </a>
             </div>
             <div class="movie-news-row row">
               <div class="col col-sm-4">
                 <div class="movie-news-item__thumbnail thumbnail">
                   <img class="movie-news-item__image" src="assets/img/news/news-2.jpg" alt="">
-                </div> 
-              </div> 
+                </div>
+              </div>
               <div class="col col-sm-8">
-                <p class="movie-news-item__paragraph">Им стал мюзикл "Ла-Ла Ленд", который снял режиссер Дэмьен Шазелл. Лучшим
+                <p class="movie-news-item__paragraph">Им стал мюзикл "Ла-Ла Ленд", который снял режиссер Дэмьен Шазелл.
+                  Лучшим
                   актером года был признан Кейси Аффлек, сыгравший в картине "Манчестер у моря", а в аналогичной женской
                   категории победа была присуждена Изабель Юппер снимавшаяся в фильме "Она". Лучшей актрисой второго
                   плана названа Мишель Уильямс, сыгравшая в драме "Некоторые женщины", а лучшим актером второго плана -
                   Махершалалхашбаз Али за роль в картине "Лунный свет"...
                 </p>
-                <a href="#" class="movie-news-item__button btn btn-warning" role="button">Подробнее</a> 
+                <a href="#" class="movie-news-item__button btn btn-warning" role="button">Подробнее</a>
               </div>
             </div>
           </article>
 
           <article class="movie-news-item">
             <div class="movie-news-item__caption caption">
-              <a href="#"><h3>Крис Прэтт и Дженнифер Лоуренс представили "Пассажиров" в Париже</h3></a>
+              <a href="#">
+                <h3>Крис Прэтт и Дженнифер Лоуренс представили "Пассажиров" в Париже</h3>
+              </a>
             </div>
             <div class="movie-news-row row">
               <div class="col col-sm-4">
                 <div class="movie-news-item__thumbnail thumbnail">
                   <img class="movie-news-item__image" src="assets/img/news/news-3.jpg" alt="">
-                </div> 
-              </div> 
+                </div>
+              </div>
               <div class="col col-sm-8">
-                <p class="movie-news-item__paragraph">Хотя до премьеры "Пассажиров" остается еще почти месяц, промо-тур в
+                <p class="movie-news-item__paragraph">Хотя до премьеры "Пассажиров" остается еще почти месяц, промо-тур
+                  в
                   поддержку нового фильма уже начался: Крис Прэтт и Дженнифер Лоуренс, исполнившие в фильме главные
                   роли, представили "Пассажиров" в рамках фотоколла в Париже. В кинотеатрах "Пассажиры" появятся под
                   занавес 2016 года – 22 декабря...
                 </p>
-                <a href="#" class="movie-news-item__button btn btn-warning" role="button">Подробнее</a> 
+                <a href="#" class="movie-news-item__button btn btn-warning" role="button">Подробнее</a>
               </div>
             </div>
           </article>
@@ -457,7 +467,7 @@
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             </ol>
-          
+
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img src="assets/img/films/1263242.jpg" alt="film title" class="vertical-slider__image">
@@ -469,7 +479,7 @@
                 <img src="assets/img/films/1401663.jpg" alt="film title" class="vertical-slider__image">
               </div>
             </div>
-          
+
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
@@ -479,7 +489,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          
+
         </div>
         <div class="site-search panel panel-info hidden-sm hidden-xs">
           <div class="panel-heading">Поиск</div>
@@ -504,17 +514,19 @@
 
               <ul class="user-login__tabs nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#user-login-sidebar" class="user-login__link" aria-controls="user-login-sidebar" role="tab" data-toggle="tab">
+                  <a href="#user-login-sidebar" class="user-login__link" aria-controls="user-login-sidebar" role="tab"
+                    data-toggle="tab">
                     <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
                   </a>
                 </li>
                 <li role="presentation">
-                  <a href="#user-registration-sidebar" aria-controls="user-registration-sidebar" role="tab" data-toggle="tab">
+                  <a href="#user-registration-sidebar" aria-controls="user-registration-sidebar" role="tab"
+                    data-toggle="tab">
                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                   </a>
                 </li>
               </ul>
-            
+
               <div class="user-login__content tab-content">
                 <div role="tabpanel" class="tab-pane active fade in" id="user-login-sidebar">
                   <form action="login">
@@ -524,7 +536,7 @@
                     <div class="form-group">
                       <input name="pass" class="form-control input-lg" type="password" placeholder="Пароль">
                     </div>
-                      <button class="btn btn-default btn-lg btn-block" type="submit">Вход</button>
+                    <button class="btn btn-default btn-lg btn-block" type="submit">Вход</button>
                   </form>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="user-registration-sidebar">
@@ -538,11 +550,11 @@
                     <div class="form-group">
                       <input name="email" class="form-control input-lg" type="email" placeholder="Email">
                     </div>
-                      <button class="btn btn-default btn-lg btn-block" type="submit">Регистрация</button>
+                    <button class="btn btn-default btn-lg btn-block" type="submit">Регистрация</button>
                   </form>
                 </div>
               </div>
-            
+
             </div>
           </div>
         </div>
@@ -599,17 +611,28 @@
           <div class="panel-heading">Рейтинг фильмов</div>
           <div class="top-films__body panel-body">
             <div class="top-films__list list-group">
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.9</span>Марсианин</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.8</span>Иллюзия обмана 2</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.5</span>Из машины</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.2</span>Люси</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.0</span>Выхода нет</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.9</span>Стражи галактики</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.7</span>Человек-муравей</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.5</span>Месть от кутюр</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.4</span>Люди икс</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.3</span>Занесло</a>
-              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.2</span>Дочь Бога</a>
+              <a class="top-films__item list-group-item" href="#"><span
+                  class="top-films__badge badge">8.9</span>Марсианин</a>
+              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.8</span>Иллюзия
+                обмана 2</a>
+              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.5</span>Из
+                машины</a>
+              <a class="top-films__item list-group-item" href="#"><span
+                  class="top-films__badge badge">8.2</span>Люси</a>
+              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">8.0</span>Выхода
+                нет</a>
+              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.9</span>Стражи
+                галактики</a>
+              <a class="top-films__item list-group-item" href="#"><span
+                  class="top-films__badge badge">7.7</span>Человек-муравей</a>
+              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.5</span>Месть
+                от кутюр</a>
+              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.4</span>Люди
+                икс</a>
+              <a class="top-films__item list-group-item" href="#"><span
+                  class="top-films__badge badge">7.3</span>Занесло</a>
+              <a class="top-films__item list-group-item" href="#"><span class="top-films__badge badge">7.2</span>Дочь
+                Бога</a>
             </div>
           </div>
         </div>
@@ -624,46 +647,64 @@
           <div class="row">
 
             <div class="footer-top">
-              
+
               <div class="footer-top-column footer-top-column--first col-md-3 col-xs-6">
                 <h4 class="footer-top-column__title">Lorem ipsum dolor sit.</h4>
                 <ul class="footer-top-column__list">
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore, incidunt.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore,
+                      incidunt.</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a>
+                  </li>
                 </ul>
               </div>
 
               <div class="footer-top-column footer-top-column--second col-md-3 col-xs-6">
                 <h4 class="footer-top-column__title">Voluptatem, commodi, at.</h4>
                 <ul class="footer-top-column__list">
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore, incidunt.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Aspernatur, fugiat, possimus!</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore,
+                      incidunt.</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Aspernatur, fugiat,
+                      possimus!</a></li>
                 </ul>
               </div>
 
               <div class="footer-top-column  footer-top-column--third col-md-3 col-xs-6">
                 <h4 class="footer-top-column__title">Sed, ducimus perspiciatis.</h4>
                 <ul class="footer-top-column__list">
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore, incidunt.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore,
+                      incidunt.</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a>
+                  </li>
                 </ul>
               </div>
 
               <div class="footer-top-column  footer-top-column--fourth col-md-3 col-xs-6">
                 <h4 class="footer-top-column__title">Reiciendis, minima, a?</h4>
                 <ul class="footer-top-column__list">
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore, incidunt.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a></li>
-                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Aspernatur, fugiat, possimus!</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Lorem ipsum dolor.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Delectus, labore,
+                      incidunt.</a></li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Eos neque, eius.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Minus, omnis vel.</a>
+                  </li>
+                  <li class="footer-top-column__item"><a class="footer-top-column__link" href="#">Aspernatur, fugiat,
+                      possimus!</a></li>
                 </ul>
               </div>
 
@@ -673,7 +714,8 @@
           <div class="row">
             <div class="footer-bottom">
               <div class="footer-bottom-column col-xs-12">
-                <strong><a class="footer-bottom-column__link" href="https://fomenko.top/">Учебный шаблон Bootstrap v3.4.1. Разработка - Андрей
+                <strong><a class="footer-bottom-column__link" href="https://fomenko.top/">Учебный шаблон Bootstrap
+                    v3.4.1. Разработка - Андрей
                     Фоменко</a></strong>
               </div>
             </div>
@@ -683,8 +725,8 @@
     </div>
   </footer>
 
-<script src="libs/jquery/dist/jquery.min.js"></script>
-<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

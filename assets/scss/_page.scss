@@ -7,7 +7,6 @@
   }
 
   &__well {
-    margin-bottom: $gap*2;
     border-radius: 0 0 4px 4px;
 
     &-item {
@@ -35,12 +34,12 @@
   &__panel{
 
     &-title {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
-
-    &-glyphicon {
-      margin-right: 10px;
+    &-username {
+      line-height: 1.42857143;
     }
+  
   }
 }
 

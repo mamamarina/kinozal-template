@@ -3,19 +3,11 @@
 }
 
 .site-search {
-    margin-bottom: $gap*2;
-
-    @include sm {
-        margin-bottom: $gap*3;
-    }
+    margin-bottom: $gap*3;
 }
 
 .user-login {
-    margin-bottom: $gap*2;
-    
-    @include sm {
-        margin-bottom: $gap*4;
-    }
+    margin-bottom: $gap*4;
 }
 
 .new-films,
