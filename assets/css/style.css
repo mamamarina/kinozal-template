@@ -274,10 +274,10 @@ p {
 
 .movie-info__well {
   border-radius: 0 0 4px 4px;
-  white-space: nowrap;
 }
 
 .movie-info__well-item {
+  white-space: nowrap;
   font-size: 1.1875rem;
   color: #333333;
 }
@@ -542,5 +542,8 @@ p {
     font-size: 2.5rem;
     letter-spacing: 0.2em;
     margin-right: -5px;
+  }
+  .movie-info__well-item:not(:last-of-type) {
+    margin-right: 15px;
   }
 }
