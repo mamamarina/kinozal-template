@@ -8,7 +8,7 @@
 
   &__well {
     border-radius: 0 0 4px 4px;
-
+    white-space: nowrap;
     &-item {
         font-size: 1.1875rem;
         color: lighten($color-dark, 6.25%);

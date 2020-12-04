@@ -45,13 +45,13 @@ h1:after, h2:before, h2:after {
   background-color: #517ba2;
 }
 
-.navbar-inverse .navbar-nav li > a {
+.navbar-inverse .navbar-nav > li > a {
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
-.navbar-inverse .navbar-nav li > a:hover, .navbar-inverse .navbar-nav li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   background-color: #165690;
 }
 
@@ -274,6 +274,7 @@ p {
 
 .movie-info__well {
   border-radius: 0 0 4px 4px;
+  white-space: nowrap;
 }
 
 .movie-info__well-item {
@@ -490,7 +491,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  .navbar-inverse .navbar-nav li > a {
+  .navbar-inverse .navbar-nav > li > a {
     border-radius: 4px;
   }
   .navbar-left li {
@@ -502,7 +503,7 @@ p {
 }
 
 @media (max-width: 767.8px) {
-  .navbar-inverse .navbar-nav li > a {
+  .navbar-inverse .navbar-nav > li > a {
     text-align: center;
   }
   .navbar-header {
